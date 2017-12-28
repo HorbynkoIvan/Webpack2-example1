@@ -41,3 +41,6 @@
      "start": "webpack --watch",
   },
 ```
+###Pug - template engine
+18. need to setup two plugins **yarn add pug pug-loader -D**
+19. **touch source/index.pug** - create first pug file
