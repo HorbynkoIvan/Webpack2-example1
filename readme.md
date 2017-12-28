@@ -19,8 +19,25 @@
     "start": "webpack"
   },
 ```
-after that we can run app **yarn run start**
 10. **mkdir source** - create new folder
 11. **touch source/{index.js,menu.js}** - create two new files in folder
 ###Create html file using ***html-webpack-plugin***
-11. **yarn add html-webpack-plugin -D** - install html-webpack-plugin(local)
+12. **yarn add html-webpack-plugin -D** - install html-webpack-plugin(local)
+###Start App
+13. **yarn run start**
+###Local server ***node-static***plugin
+14. **yarn add node-static -D** install local server
+15. create *npm-scripts*
+ ```
+"scripts": {
+    "serv": "static build"
+  },
+```
+16. start local server **yarn run serv**
+###Webpack --watch
+17. for that, in scripts we need to add key word --watch
+ ```
+"scripts": {
+     "start": "webpack --watch",
+  },
+```
