@@ -44,3 +44,15 @@
 ###Pug - template engine
 18. need to setup two plugins **yarn add pug pug-loader -D**
 19. **touch source/index.pug** - create first pug file
+
+##Webpack with multipage application
+1. **mkdir -p source/pages/{index,blog}** - create new folders for two pages
+2. **touch source/pages/base.pug** - create common base.pug  
+3. **touch source/pages/index/index.pug** - create pug for index 
+4. **touch source/pages/blog/blog.pug** - create pug for blog 
+5. **mkdir -p source/components/menu** - create new folders for components
+6. **touch source/components/menu/menu.js** - create menu 
+7. **touch source/pages/index/index.js** - create index.js, will invoke menu.js  
+8. **touch source/pages/blog/blog.js** - create blog.js, will also invoke menu.js
+9. **rm source/{index.pug,index.js,menu.js}** - delete old files
+
